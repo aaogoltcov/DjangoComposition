@@ -1,0 +1,13 @@
+{% extends "app/home.html" %}
+
+{% block page %}
+{% load static %}
+
+    <div class="row">
+      <div class="col s12">
+        <h1 class="col s12">Каталог компьютеров Apple</h1>
+        {% include "app/list_of_macs.html" with items=items %}
+      </div>
+    </div>
+
+{% endblock %}
